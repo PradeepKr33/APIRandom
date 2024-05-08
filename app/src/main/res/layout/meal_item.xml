@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3"
+            android:layout_marginHorizontal="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/strMeal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="loading"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/idMeal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="loading"
+                android:textSize="17sp"/>
+
+
+            <TextView
+                android:id="@+id/strCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="loading"
+                android:textSize="17sp"/>
+
+
+            <TextView
+                android:id="@+id/strArea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="loading"
+                android:textSize="17sp"/>
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/strMealThumb"
+            android:layout_weight="0.7"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher_background"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/lay1">
+
+        <Button
+            android:id="@+id/RecipeBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Recipe"/>
+
+        <Button
+            android:id="@+id/instructionsBtn"
+            android:layout_marginStart="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Instructions"/>
+
+        <Button
+            android:id="@+id/ingredientsBtn"
+            android:layout_marginStart="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ingredients"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
